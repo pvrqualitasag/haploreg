@@ -32,7 +32,7 @@ The following commands are only done once to have the material from the paper av
 
 ```{r s1-data-download, eval=FALSE}
 # prepare data download directory
-download_dir <- file.path("inst", "extdata","hiltpold2020")
+download_dir <- file.path(here::here(), "inst", "extdata","hiltpold2020")
 if (! fs::dir_exists(download_dir)) fs::dir_create(path = download_dir)
 s1_data_url <- "https://doi.org/10.1371/journal.pgen.1008804.s009"
 s1_data_zip <- file.path(download_dir, "S1_Data.zip")
